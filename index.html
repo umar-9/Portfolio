@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>Engineering Portfolio</title>
+    </head>
+
+
+    <body>
+
+        <div id="background">
+            <div id="introduction">
+                <h1 style="font-size:70px">Umar</h1>
+                <div id="text_changer" style="font-size: 20px">Aspiring Engineer</div>
+            </div>
+
+            <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" style="color:#fff">Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mini-Projects
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/Seismometer" style="color:#034078;">Seismometer</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ text-based game</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cv.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:usultonov_b18@kegs.org.uk">Contact</a>
+                            </li>
+                            <li class="navbar-text">
+                                <a href="https://www.linkedin.com/in/umar-sultonov/"><i class="fa fa-linkedin-square" style="font-size:24px; padding: 0px 10px; color:grey"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <section id="projects" class="container reveal">
+            <h1>Projects:</h1>
+            <p>The projects I embark on are team projects as part of my school's Young Engineers Club.</p>
+            <p>Through undertaking projects I hope to find which engineering discipline I enjoy most.</p>
+
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:white; background-color:#1A5184;">
+                            Care-home project (Year 10)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <strong>Year 10: Care-home project </strong> (responsible for TypeScript code, case design using TinkerCAD, and research) focussed on detection and prevention of falls, whilst preserving residents’ dignity using a BBC micro:bit and its TypeScript editor.
+                            The device would inform staff of detected falls and display other important real-time data via. the serial port on a computer. The code extensively analysed accelerometer and temperature data, transmitted it,
+                            and provided code for extensive analysis of a pulse oximeter (which would help forecast falls according to research), although integration was not achieved due to hardware incompatibility. The project achieved the following:
+                            <ul>
+                                <li>‘Highly Commended’ award (2022) – Chelmsford Science and Engineering Society TEXPO competition</li>
+                                <li>Gold CREST award (2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:white; background-color:#1A5184;">
+                            PA-Pi Project (Year 11)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <strong>Year 11: Project for the PA Raspberry Pi Competition</strong>, a solution to energy wastage through household lighting.
+                            It is able to detect the artificial light coming from your household lighting and provide easy-to-read data to show when you have been wasting energy (either lights on with no-one in the room or when it’s daytime outside).
+                            It can be accessed from a web app on any browser, including mobile, which will provide up to date statistics on your total spendings and allow for you to track up to date spendings on household lighting with the help of a Raspberry Pi.
+                            The essential information such as times when energy has been used on lighting, monthly spendings on energy and equivalent carbon dioxide emissions can be seen from the homepage.
+                            Data from individual days can be looked up and trends over a longer period of time can be tracked, allowing you to make better choices about your light usage. This project achieved the following:
+                            <ul>
+                                <li>‘Technical Design Award (Year 10-11)’ award (2023) – Chelmsford Science and Engineering Society TEXPO competition</li>
+                                <li>Silver CREST award (2023)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:white; background-color:#1A5184;">
+                            Year 12
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <ol>
+                                <li><strong>Current Seismometer Project</strong></li>
+                                <li><strong>Current Student Robotics Project</strong> (yet to start)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="experiences" class="container reveal">
+            <h1>Experiences</h1>
+            <h2>Work Experience at BAE Systems (Maritime Sector)</h2>
+            <p>
+                Received a Silver Industrial Cadets Award for participation in the programme.<br>
+                The programme was focussed around immersion in an engineering environment, simulating the design, development, execution, and selling of a product.
+            </p>
+            <h2>Work Experience at Teledyne e2v</h2>
+            <p>Involved both the Space Imaging and the RF sectors of the company</p>
+        </section>
+
+
+
+        <section id="skills" class="container reveal">
+            <h1>Skills</h1>
+            <p>The projects I participate in allow me to develop and showcase skills I pick up from curricular subjects or extracurricular.</p>
+            <ul>
+                <li style="font-size: 18px;">
+                    The Royal Society competition allowed me to explore TypeScript, as I wrote the software for the microbit, and designed the case for the device.
+                </li>
+                <li style="font-size: 18px;">
+                    My competency in Electronics meant that I could easily pick up A-Level concepts to implement in the PA-Pi project,
+                    and my familiarity in Fusion 360 meant that I could create orthographic, isometric, exploded etc. views and could inspect the model created for 3D-printability.
+                </li>
+            </ul>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/pi.jpg" class="d-block w-100" alt="Pi">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-para" style="font-size: 30px;">Working with Raspberry Pi's</h5>
+                            <p class="carousel-para" style="background-image: radial-gradient(black, black, transparent); font-size: 20px;">This skill was developed during the PA-Pi project and the Seismometer project</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/cad.jpg" class="d-block w-100" alt="Fusion 360">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-para2" style="font-size: 30px;">CAD (Fusion 360)</h5>
+                            <p style="color: black; font-weight: bold; font-size: 20px;">This skill was developed during GCSE DT work (for design and drawings),<br> and the PA-Pi project (for technical drawings)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/python.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-para" style="font-size: 30px;">Python programming</h5>
+                            <p style="background-image: radial-gradient(black, transparent); font-size: 20px;">This skill was developed during the PA-Pi project, the Seismometer project</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/electronics.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-para" style="font-size: 30px;">Electronics</h5>
+                            <p style="background-image: radial-gradient(black, black, transparent); font-size: 20px;">This skill was developed during the PA-Pi project and the Seismometer project</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+    </body>
+
+</html>

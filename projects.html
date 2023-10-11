@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>Projects</title>
+    </head>
+
+
+    <body>
+
+        <div id="background">
+            <div id="introduction">
+                <h1 style="font-size:70px">Umar</h1>
+                <div id="text_changer" style="font-size: 20px">Aspiring Engineer</div>
+            </div>
+
+            <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" style="color:#fff">Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mini-Projects
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/Seismometer" style="color:#034078;">Seismometer</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ text-based game</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cv.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:usultonov_b18@kegs.org.uk">Contact</a>
+                            </li>
+                            <li class="navbar-text">
+                                <a href="https://www.linkedin.com/in/umar-sultonov/"><i class="fa fa-linkedin-square" style="font-size:24px; padding: 0px 10px; color:grey"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="container reveal">
+            <h1>Year 10: Royal Society Project</h1>
+            <h2>Can low-cost technology assist in adult social care?</h2>
+            <p>A team project in year 10</p>
+            <div>
+                <form action="mailto:usultonov_b18@kegs.org.uk?subject=Request%20for%20Royal%20Society%20Project%20Report">
+                    <input type="submit" value="Request full project report" class="submit_button">
+                </form>
+            </div>
+            <br>
+            <p>
+                This project intends to show that the monitoring and potential prevention of falls may
+                occur with cost-effective technology in a care-home setting. This is done by
+                using the BBC micro:bit, where the accelerometer can inform of an
+                individual’s current movement, a pulse-oximeter can inform of an individual’s
+                heart rate and oxygen levels, a buzzer unit with an astable that can alert the
+                user and the staff, and an input and output terminal, which allows staff to see
+                the current data and also edit the individual’s boundaries for heart rate and
+                oxygen levels and whether they have dementia or not
+            </p>
+            <p>
+                Our device uses an accelerometer to detect if a person has fallen over and notify staff after a brief period, allowing
+                quick response to the fall, and therefore less injury to the elderly patient. The heart rate monitor helps to notify staff
+                when a fall may occur, due to older adults who have suffered from a fall being twice as likely to suffer from an
+                irregular heartbeat known as atrial fibrillation, allowing for an even quicker response to falls or injuries. The heart
+                rate monitor will also be useful in several other situations involving the health of the elderly person; however, we
+                are focusing on it being used to detect and prevent falls. Furthermore, studies show that heart rate can vary by up to
+                20% during falls, meaning that the sensors will allow for an even more accurate prediction of when a fall may occur.
+                A pulse oximeter sensor is included as well (though not implemented due to compatibility issues), as blood oxygen levels
+                can also be a symptom if a patient is about to fall, with hypoxia
+                (when a person's blood oxygen level falls below a certain threshold) causing a reduction in physical capabilities, and
+                by extension falls which may lead to severe or life-threatening injuries to the elderly patient.
+            </p>
+            <p>
+                Our design also involves a manual override button, allowing the elderly person to easily contact for help if they need
+                it, meaning that even if the fall is not detected by any of the sensors, the elderly person still has a way to reach out
+                for help. The program that runs on the Micro:bit detects if a person has had a fall (detected by a high acceleration
+                followed by a period of rest) and will reset if the person begins moving again. In a care home setting, the program
+                would operate on each watch and interface with one receiver Micro:bit which will display the information (in our
+                case this is done through the Micro:bit serial and radio communication), this allows for quick communication of
+                statistics and therefore a quick response from the care home workers. We have used a 3D printed case for our
+                design, enabling for a strong case, whilst also being adaptable to our needs and design, allowing for versatility whilst
+                maintaining the function of the device.
+            </p>
+        </section>
+
+        <section class="container reveal">
+            <h1>Year 11: PA Raspberry Pi Project</h1>
+            <h3>After careful consideration of the theme, “accelerating energy transition” for our project, we decided to develop a smart lighting monitoring system, which can inform users on how to save energy with something as simple as turning lights off.</h3>
+            <p>A team project in year 11</p>
+            <div>
+                <form action="mailto:usultonov_b18@kegs.org.uk?subject=Request%20for%20PA-Pi%20Report">
+                    <input type="submit" value="Request full project report" class="submit_button">
+                </form>
+            </div>
+            <br>
+            <p>
+                The product is able to detect the artificial light coming from your household lighting and provide easy to read data to show when you have been wasting energy (either lights on with no-one in the room or when it’s daytime outside). Filament can be accessed from a web app on any browser, including mobile, which will provide up to date statistics on your total spendings and allow for you to track up to date spendings on household lighting with the help of a Raspberry Pi.
+                The essential information such as times when energy has been used on lighting, monthly spendings on energy and equivalent carbon dioxide emissions can be seen from the homepage. Data from individual days can be looked up and trends over a longer period of time can be tracked, allowing you to make better choices about your light usage.
+                Our aims were to show that through cost-effective methods, we can ‘accelerate the energy transition’. We chose to do this through targeting household energy wastage from lighting. Therefore, our product has been designed with the target audience of households in mind. This can be seen in the following areas of development: considerations of cost, viability/ease of day-to-day usage, and how well our project would scale. Our product consists of an electronic system for artificial light detection, code to analyse data from both the system and a motion sensor, and code based upon the Django framework to display a website with required data, using a database for storage.
+                Household lighting is responsible for about 12% of the 34 EJ of annual household energy consumption, and all 3 of the following problems are addressed: turning off the lights when you leave a room, using energy-efficient LED bulbs – as our product will not function without them or fluorescent bulbs, and using natural light more effectively.
+                The intended use of the product is as follows:
+            </p>
+            <ul>
+                <li style="font-size: 17px;">Households could install one of these kits with little setup and make considerable savings. The kit would be placed in a room and left to record data.</li>
+                <li style="font-size: 17px;">Businesses could also make use of these, in order to make more informed financial decisions.</li>
+                <li style="font-size: 17px;">We have tried to maximise the lighting compatible with the circuit – LED and fluorescent, both of which are likely used by our target audience for their efficiency.</li>
+            </ul>
+            <p>
+                Overall, our project will decrease energy usage for each household. This not only benefits the user, reducing the cost for the energy bill, especially relevant in recent times, and will benefit the environment. Less energy usage means less fuel being burnt (gas primarily in the UK, at around 40%) for that energy being produced, meaning less emissions (carbon dioxide, sulfur dioxide, nitrogen oxides, etc.), slowing the greenhouse effect, improving air quality, and slowing global warming. The effects of energy usage are also explained to users
+            </p>
+        </section>
+
+        <section class="container reveal" id="quote">
+            <div id="quote_txt">
+                <h3>
+                    What we usually consider as impossible are simply engineering
+                    problems... there's no law of physics preventing them.
+                </h3>
+                <h4>
+                    – Michio Kaku
+                </h4>
+            </div>
+        </section>
+    </body>
+
+</html>

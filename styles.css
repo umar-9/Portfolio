@@ -1,0 +1,116 @@
+body,
+html {
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Electronics (main).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background {
+    height: 50%;
+    position: relative;
+}
+
+
+#introduction {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*BG color scheme: #121E47 #002463 #034078*/
+
+
+.container {
+    border-radius: 5px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+.accordion-button {
+    font-size: 17px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.accordion-body {
+    font-size: 16px;
+}
+
+.d-block.w-100 {
+    width: 150px;
+    height: 300px;
+    object-position: 25% 25%;
+}
+
+.carousel-para {
+    background-image: radial-gradient(black, transparent);
+}
+
+.carousel-para2 {
+    color: black;
+    font-weight: bold;
+}
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#quote {
+    color: white;
+    margin-left: 50px;
+    border-radius: 0px;
+}
+
+#quote_txt {
+    border-left: 3px solid #ccc;
+    padding: 40px;
+}
+
+.contact {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.submit_button {
+    background-color: black;
+    color: white;
+    padding: 3px 6px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#linkedin {
+    float: right;
+    margin-right: 0px;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: 4s fade;
+}
