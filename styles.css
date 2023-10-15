@@ -1,7 +1,7 @@
 body,
 html {
     height: 100%;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Electronics (main).jpg");
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/main.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -51,13 +51,26 @@ p {
 
 .carousel-para {
     background-image: radial-gradient(black, transparent);
+    font-size: 30px;
 }
 
-.carousel-para2 {
-    color: black;
-    font-weight: bold;
+.carousel-para-sub {
+    background-image: radial-gradient(black, transparent);
+    font-size: 20px;
 }
 
+.carousel-para-sub-cred {
+    background-image: radial-gradient(black, transparent);
+    font-size: 15px;
+}
+
+.credits:hover {
+    color: gray;
+}
+
+.credits {
+    color: white;
+}
 
 .reveal {
     position: relative;
@@ -114,3 +127,75 @@ p {
 .fade-in {
     animation: 4s fade;
 }
+
+
+
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+@keyframes add_padding {
+    0% {
+        padding-bottom: 0px;
+    }
+
+    100% {
+        padding-bottom: 50px;
+    }
+}
+
+.overlay {
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212529;
+}
+  
+.img_container:hover .overlay {
+    opacity: 1;
+    animation: 1s add_padding forwards;
+}
+  
+.text {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+}
+
