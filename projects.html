@@ -271,6 +271,111 @@
             <p>
                 Overall, our project will decrease energy usage for each household. This not only benefits the user, reducing the cost for the energy bill, especially relevant in recent times, and will benefit the environment. Less energy usage means less fuel being burnt (gas primarily in the UK, at around 40%) for that energy being produced, meaning less emissions (carbon dioxide, sulfur dioxide, nitrogen oxides, etc.), slowing the greenhouse effect, improving air quality, and slowing global warming. The effects of energy usage are also explained to users
             </p>
+            <p>
+                My role in this project was primarily: research (transport, household energy report research, effect of CO₂, and
+                suggestions for energy saving – all of which broadened my knowledge about sustainability), initial ideas, circuit
+                design & testing/adjusting, the sensor interpretation code, and 3D printing. I was most engaged in the design,
+                development, and interaction of the electronic system.
+            </p>
+            <p>
+                The electronic system particularly interested me, as our project needed to distinguish between artificial light (which can be wasted) and natural light (which cannot),
+                 therefore, we used a photodiode which has a high-response rate and filtered any signals of under 50Hz out. LED Bulbs flicker at 50Hz and fluorescent bulbs flicker at 100Hz,
+                 so we can detect artificial light. Natural light would then be detected using a sunset-sunrise API. As I did designed and built both the electronics and the circuit system, 
+                 it was easier than normal to integrate, and I could easily make any adjustments (e.g., having the code look for a square wave instead of a constant logic high/low output).
+            </p>
+        </section>
+
+        <section class="container reveal">
+            <div class="img">
+                <div class="row">
+                    <div class="column">
+                        <div class="img_container">
+                            <img src="project/pi-case1.png">
+                            <div class="overlay">
+                                <div class="text">Case</div>
+                            </div>
+                        </div>
+
+                        <div class="img_container">
+                            <img src="project/pi-case3.png">
+                            <div class="overlay">
+                                <div class="text">Case</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img_container">
+                            <img src="project/pi-case4.png">
+                            <div class="overlay">
+                                <div class="text">Technical drawing (Orthographic) for main body of case</div>
+                            </div>
+                        </div>
+
+                        <div class="img_container">
+                            <img src="project/pi-case5.png">
+                            <div class="overlay">
+                                <div class="text">Exploded view of case and components</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img_container">
+                            <img src="project/pi-circuit.jpg">
+                            <div class="overlay">
+                                <div class="text">Final circuit diagram</div>
+                            </div>
+                        </div>
+
+                        <div class="img_container">
+                            <img src="project/pi-elec1.png">
+                            <div class="overlay">
+                                <div class="text">Photodiode output (yellow) with 50Hz<br>incident light (blue) and flash from a phone</div>
+                            </div>
+                        </div>
+
+                        <div class="img_container">
+                            <img src="project/pi-elec5.png">
+                            <div class="overlay">
+                                <div class="text" style="text-align: center;">Photodiode output (yellow) with final<br>amplifier output (blue) (before adjustment)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="img_container">
+                            <img src="project/pi-case2.png">
+                            <div class="overlay">
+                                <div class="text">Case</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img_container">
+                            <img src="project/pi-elec2.png">
+                            <div class="overlay">
+                                <div class="text">Frequency response of filter</div>
+                            </div>
+                        </div>
+
+                        <div class="img_container">
+                            <img src="project/pi-elec3.png">
+                            <div class="overlay">
+                                <div class="text">Case</div>
+                            </div>
+                        </div>
+                        
+                        <div class="img_container">
+                            <img src="project/pi-elec4.png">
+                            <div class="overlay">
+                                <div class="text">Output from full electronic system</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
         </section>
 
         <section class="container reveal" id="quote">
