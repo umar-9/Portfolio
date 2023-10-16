@@ -37,8 +37,3 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-
-function form_processor() {
-    alert("Submitted successfully");
-}
