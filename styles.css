@@ -11,6 +11,66 @@ html {
     position: relative;
 }
 
+.container::before  {
+    position: absolute;
+    content: '';
+    left: -61px;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+
+.scroll-bar {
+    position: absolute;
+    left: 44px;
+    padding: 10px;
+}
+
+.scroll-bar .circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    position: absolute;
+    right: 11px;
+    top: -15px;
+}
+
+.scroll {
+    position: absolute;
+    left: 31px;
+    bottom: 20px;
+}
+
+.scroll .text {
+    position: absolute;
+    left: 40px;
+    bottom: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+}
+
+.scroll .button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 20px 10px;
+    font-size: 20px;
+    transition-duration: 1s;
+}
+
+.scroll .button:hover {
+    border: 2px solid #212529;
+}
+
+.scroll .button:active {
+    border: 0px solid #212529;
+    color: white;
+    font-size: 0px;
+}
+  
 
 #introduction {
     text-align: center;
@@ -86,7 +146,7 @@ p {
 
 #quote {
     color: white;
-    margin-left: 50px;
+    margin-left: 33px;
     border-radius: 0px;
 }
 
@@ -161,6 +221,20 @@ p {
     }
 }
 
+@media screen and (min-height: 1000px) {
+    #background {
+        height: 25%;
+        position: relative;
+    }
+    .container::before  {
+        background-color: transparent;
+    }
+    .scroll-bar .circle {
+        border: 0px;
+        background-color: transparent;
+    }
+}
+
 @keyframes add_padding {
     0% {
         padding-bottom: 0px;
@@ -190,3 +264,16 @@ p {
     text-align: center;
 }
 
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000
+}
+
+::-webkit-scrollbar-thumb {
+    background: #212529
+}

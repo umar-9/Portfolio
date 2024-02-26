@@ -34,6 +34,15 @@ function reveal() {
             reveals[i].classList.remove("active");
         }
     }
+
+    document.getElementById("scroll-text").remove();
 }
 
 window.addEventListener("scroll", reveal);
+
+
+
+function scroller() {
+    document.documentElement.scrollBy(0,400); // For Chrome, Firefox, IE and Opera
+    document.getElementById("scroll-text").remove();
+}
