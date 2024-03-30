@@ -6,18 +6,12 @@ html {
     background-size: cover;
 }
 
+
 #background {
     height: 50%;
     position: relative;
 }
 
-.text {
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-}
 
 .navbar {
     font-family: monospace;
@@ -48,23 +42,40 @@ html {
 }
 
 
-/* Scroll button */
-.scroll {
-    position: absolute;
-    left: 29px;
-    bottom: 20px;
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
 
-.scroll .text {
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* Scroll button */
+#scroll {
+    position: absolute;
+    left: 29px;
+    bottom: 50px;
+}
+
+#scroll-text {
     position: absolute;
     left: 40px;
     bottom: 15px;
     font-size: 20px;
     color: white;
     font-family: monospace;
+    padding: 10px;
+    text-align: center;
 }
 
-.scroll .button {
+
+#scroll .button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 16px;
@@ -74,11 +85,11 @@ html {
     color: white;
 }
 
-.scroll .button:hover {
+#scroll .button:hover {
     border: 2px solid #212529;
 }
 
-.scroll .button:active {
+#scroll .button:active {
     border: 0px solid #212529;
     color: white;
 }
@@ -133,40 +144,58 @@ html {
     color: white;
 }
 
-/*BG color scheme: #121E47 #002463 #034078*/
-
-
-.accordion-button {
-    font-size: 17px;
-}
-
 p {
     font-size: 18px;
 }
 
+
+li {
+    font-size: 18px;
+}
+
+.accordion-button {
+    font-size: 17px;
+}
 .accordion-body {
     font-size: 16px;
 }
 
+
+/* Index.html carousel */
 .d-block.w-100 {
     width: 150px;
     height: 300px;
     object-position: 25% 25%;
+    background-size: auto, cover;
+    background-position:center;
 }
 
 .carousel-para {
-    background-image: radial-gradient(black, transparent);
-    font-size: 30px;
+    font-weight: normal;
 }
 
-.carousel-para-sub {
-    background-image: radial-gradient(black, transparent);
-    font-size: 20px;
+#pi-photo {
+    background-image:
+    radial-gradient(black, transparent),
+    url(images/r-pi.jpg);
 }
 
-.carousel-para-sub-cred {
-    background-image: radial-gradient(black, transparent);
-    font-size: 15px;
+#fusion-photo {
+    background-image:
+    radial-gradient(black, transparent),
+    url(images/cad.jpg);
+}
+
+#python-photo {
+    background-image:
+    radial-gradient(black, transparent),
+    url(images/python.jpg);
+}
+
+#electronics-photo {
+    background-image:
+    radial-gradient(black, transparent),
+    url(images/circuit-board.jpg);
 }
 
 .credits:hover {
@@ -177,18 +206,7 @@ p {
     color: white;
 }
 
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
+/* Bits from other pages */
 #quote {
     color: white;
     border-radius: 0px;
@@ -217,6 +235,13 @@ p {
     margin-right: 0px;
 }
 
+.project-image-caption {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+}
 
 
 /*FADE*/
@@ -286,6 +311,12 @@ p {
         font-size: 0px;
         color: transparent;
         text-decoration: none;
+    }
+    p {
+        font-size: 28px;
+    }
+    li {
+        font-size: 25px;
     }
 }
 

@@ -14,15 +14,15 @@
 
 
     <body>
-        <div class="scroll">
+        <div id="scroll">
             <button class="button" onclick="scroller()">↓</button>
-            <div id="scroll-text" class="text">Scroll</div>
+            <div id="scroll-text">Scroll</div>
         </div>
 
         <div id="background">
             <div id="introduction">
-                <h1 style="font-size:70px">Umar</h1>
-                <div id="text_changer" style="font-size: 20px">Aspiring Engineer</div>
+                <h1 style="font-size:70px;">Umar</h1>
+                <h4 id="text_changer" style="font-weight: normal; font-family: monospace">Aspiring Engineer</h4>
             </div>
 
             <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
@@ -48,7 +48,7 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ text-based game</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ CLI-based Adventure game</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -81,15 +81,17 @@
             <div class="accordion" id="accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:white; background-color:#1A5184;">
-                            Care-home project (Year 10)
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">Care-home project (Year 10)</h5>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                         <div class="accordion-body">
+                            <p>
                             <strong>Year 10: Care-home project </strong> (responsible for TypeScript code, case design using TinkerCAD, and research) focussed on detection and prevention of falls, whilst preserving residents’ dignity using a BBC micro:bit and its TypeScript editor.
                             The device would inform staff of detected falls and display other important real-time data via. the serial port on a computer. The code extensively analysed accelerometer and temperature data, transmitted it,
                             and provided code for extensive analysis of a pulse oximeter (which would help forecast falls according to research), although integration was not achieved due to hardware incompatibility. The project achieved the following:
+                            </p>
                             <ul>
                                 <li>‘Highly Commended’ award (2022) – Chelmsford Science and Engineering Society TEXPO competition</li>
                                 <li>Gold CREST award (2022)</li>
@@ -99,17 +101,19 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:white; background-color:#1A5184;">
-                            PA-Pi Project (Year 11)
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">PA-Pi Project (Year 11)</h5>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                         <div class="accordion-body">
+                            <p>
                             <strong>Year 11: Project for the PA Raspberry Pi Competition</strong>, a solution to energy wastage through household lighting.
                             It is able to detect the artificial light coming from your household lighting and provide easy-to-read data to show when you have been wasting energy (either lights on with no-one in the room or when it’s daytime outside).
                             It can be accessed from a web app on any browser, including mobile, which will provide up to date statistics on your total spendings and allow for you to track up to date spendings on household lighting with the help of a Raspberry Pi.
                             The essential information such as times when energy has been used on lighting, monthly spendings on energy and equivalent carbon dioxide emissions can be seen from the homepage.
                             Data from individual days can be looked up and trends over a longer period of time can be tracked, allowing you to make better choices about your light usage. This project achieved the following:
+                            </p>
                             <ul>
                                 <li>‘Technical Design Award (Year 10-11)’ award (2023) – Chelmsford Science and Engineering Society TEXPO competition</li>
                                 <li>Silver CREST award (2023)</li>
@@ -119,15 +123,15 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:white; background-color:#1A5184;">
-                            Year 12
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">Year 12 (Current)</h5>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                         <div class="accordion-body">
                             <ol>
-                                <li><strong>Current Seismometer Project</strong></li>
-                                <li><strong>Current Student Robotics Project</strong> (yet to start)</li>
+                                <li><strong>Seismometer Project</strong></li>
+                                <li><strong>Current Student Robotics Project</strong></li>
                             </ol>
                         </div>
                     </div>
@@ -165,10 +169,10 @@
             <h1>Skills</h1>
             <p>The projects I participate in allow me to develop and showcase skills I pick up from curricular subjects or extracurricular.</p>
             <ul>
-                <li style="font-size: 18px;">
+                <li>
                     The Royal Society competition allowed me to explore TypeScript, as I wrote the software for the microbit, and designed the case for the device.
                 </li>
-                <li style="font-size: 18px;">
+                <li>
                     My competency in Electronics meant that I could easily pick up A-Level concepts to implement in the PA-Pi project,
                     and my familiarity in Fusion 360 meant that I could create orthographic, isometric, exploded etc. views and could inspect the model created for 3D-printability.
                 </li>
@@ -182,10 +186,10 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="images/r-pi.jpg" class="d-block w-100" alt="Pi">
+                        <div class="d-block w-100" id="pi-photo"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel-para" style="font-size: 30px;">Working with Raspberry Pi's</h5>
-                            <p class="carousel-para-sub">This skill was developed during the PA-Pi project and the Seismometer project</p>
+                            <h3 class="carousel-para">Using Raspberry Pi's</h3>
+                            <p class="carousel-para-sub" style="font-size:125%">This skill was developed during the PA-Pi project and the Seismometer project</p>
                             <p class="carousel-para-sub-cred">
                                 Photo by 
                                 <a class="credits" href="https://unsplash.com/@harrisonbroadbent?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Harrison Broadbent</a>
@@ -195,10 +199,10 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/cad.jpg" class="d-block w-100" alt="Fusion 360">
+                        <div class="d-block w-100" id="fusion-photo"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel-para">CAD (Fusion 360)</h5>
-                            <p class="carousel-para-sub">This skill was developed during GCSE DT work (for design and drawings),<br> and the PA-Pi project (for technical drawings)</p>
+                            <h3 class="carousel-para">CAD (Fusion 360)</h3>
+                            <p class="carousel-para-sub" style="font-size:125%">This skill was developed during GCSE DT work (for design and drawings), and the PA-Pi project (for technical drawings)</p>
                             <p class="carousel-para-sub-cred">
                                 Photo by 
                                 <a class="credits" href="https://www.shutterstock.com/g/feblacal">Fernando Blanco Calzada</a>
@@ -208,19 +212,19 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/python.jpg" class="d-block w-100" alt="...">
+                        <div class="d-block w-100" id="python-photo"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel-para">Python programming</h5>
-                            <p class="carousel-para-sub">This skill was developed during the PA-Pi project, the Seismometer project</p>
+                            <h3 class="carousel-para">Python programming</h3>
+                            <p class="carousel-para-sub" style="font-size:125%">This skill was developed during the PA-Pi project, the Seismometer project</p>
                             <p class="carousel-para-sub-cred">Photo retrieved from <a class="credits" href="https://linkedinbackground.com/">linkedinbackground.com</a></p>                            
                         </div>
                     </div>
 
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/circuit-board.jpg" class="d-block w-100" alt="...">
+                        <div class="d-block w-100" id="electronics-photo"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel-para">Electronics</h5>
-                            <p class="carousel-para-sub">This skill was developed during the PA-Pi project and the Seismometer project</p>
+                            <h3 class="carousel-para">Electronics</h3>
+                            <p class="carousel-para-sub" style="font-size:125%">This skill was developed during the PA-Pi project and the Seismometer project</p>
                             <p class="carousel-para-sub-cred">Photo retrieved from <a class="credits" href="https://linkedinbackground.com/">linkedinbackground.com</a></p>                            
                         </div>
                     </div>

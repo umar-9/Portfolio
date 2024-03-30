@@ -15,16 +15,15 @@
 
 
     <body>
-        <div class="scroll">
+        <div id="scroll">
             <button class="button" onclick="scroller()">↓</button>
-            <div id="scroll-text" class="text">Scroll</div>
+            <div id="scroll-text">Scroll</div>
         </div>
-
 
         <div id="background">
             <div id="introduction">
-                <h1 style="font-size:70px">Umar</h1>
-                <div id="text_changer" style="font-size: 20px">Aspiring Engineer</div>
+                <h1 style="font-size:70px;">Umar</h1>
+                <h4 id="text_changer" style="font-weight: normal; font-family: monospace">Aspiring Engineer</h4>
             </div>
 
             <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
@@ -50,7 +49,7 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ text-based game</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ CLI-based Adventure game</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -174,7 +173,7 @@
             <div class="img_container" style="outline: 5px solid white;">
                 <img src="project/rsp_block.png" style="width: 100%">
                 <div class="overlay">
-                    <div class="text">Block diagram</div>
+                    <div class="project-image-caption">Block diagram</div>
                 </div>
             </div>
             <br>
@@ -185,21 +184,21 @@
                         <div class="img_container">
                             <img src="project/rsp_cad.png">
                             <div class="overlay">
-                                <div class="text">CAD (Using TinkerCAD) of case design</div>
+                                <div class="project-image-caption">CAD (Using TinkerCAD) of case design</div>
                             </div>
                         </div>
                         
                         <div class="img_container">
                             <img src="project/rsp_cad1.png">
                             <div class="overlay">
-                                <div class="text">Isometric view of case design</div>
+                                <div class="project-image-caption">Isometric view of case design</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/rsp_outp.png">
                             <div class="overlay">
-                                <div class="text">Output serial terminal on the PC</div>
+                                <div class="project-image-caption">Output serial terminal on the PC</div>
                             </div>
                         </div>
                     </div>
@@ -208,14 +207,14 @@
                         <div class="img_container">
                             <img src="project/rsp_case1.png">
                             <div class="overlay">
-                                <div class="text">Case (3D printed with microbit housed)</div>
+                                <div class="project-image-caption">Case (3D printed with microbit housed)</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/rsp_case2.png">
                             <div class="overlay">
-                                <div class="text">Case (3D printed with microbit housed)</div>
+                                <div class="project-image-caption">Case (3D printed with microbit housed)</div>
                             </div>
                         </div>
 
@@ -226,14 +225,14 @@
                         <div class="img_container">
                             <img src="project/rsp_case3.png">
                             <div class="overlay">
-                                <div class="text">Case (3D printed with microbit housed)</div>
+                                <div class="project-image-caption">Case (3D printed with microbit housed)</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/rsp_case4.png">
                             <div class="overlay">
-                                <div class="text">Pulse Oximeter</div>
+                                <div class="project-image-caption">Pulse Oximeter</div>
                             </div>
                         </div>
 
@@ -243,14 +242,14 @@
                         <div class="img_container">
                             <img src="project/rsp_case5.png">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/rsp_case6.jpg">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
                     </div>
@@ -323,14 +322,14 @@
                         <div class="img_container">
                             <img src="project/pi-case1.png">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/pi-case3.png">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
                     </div>
@@ -339,14 +338,14 @@
                         <div class="img_container">
                             <img src="project/pi-case4.png">
                             <div class="overlay">
-                                <div class="text">Technical drawing (Orthographic) for main body of case</div>
+                                <div class="project-image-caption">Technical drawing (Orthographic) for main body of case</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/pi-case5.png">
                             <div class="overlay">
-                                <div class="text">Exploded view of case and components</div>
+                                <div class="project-image-caption">Exploded view of case and components</div>
                             </div>
                         </div>
                     </div>
@@ -355,28 +354,28 @@
                         <div class="img_container">
                             <img src="project/pi-circuit.jpg">
                             <div class="overlay">
-                                <div class="text">Final circuit diagram</div>
+                                <div class="project-image-caption">Final circuit diagram</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/pi-elec1.png">
                             <div class="overlay">
-                                <div class="text">Photodiode output (yellow) with 50Hz<br>incident light (blue) and flash from a phone</div>
+                                <div class="project-image-caption">Photodiode output (yellow) with 50Hz<br>incident light (blue) and flash from a phone</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/pi-elec5.png">
                             <div class="overlay">
-                                <div class="text" style="text-align: center;">Photodiode output (yellow) with final<br>amplifier output (blue) (before adjustment)</div>
+                                <div class="project-image-caption" style="text-align: center;">Photodiode output (yellow) with final<br>amplifier output (blue) (before adjustment)</div>
                             </div>
                         </div>
                         
                         <div class="img_container">
                             <img src="project/pi-case2.png">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
                     </div>
@@ -385,21 +384,21 @@
                         <div class="img_container">
                             <img src="project/pi-elec2.png">
                             <div class="overlay">
-                                <div class="text">Frequency response of filter</div>
+                                <div class="project-image-caption">Frequency response of filter</div>
                             </div>
                         </div>
 
                         <div class="img_container">
                             <img src="project/pi-elec3.png">
                             <div class="overlay">
-                                <div class="text">Case</div>
+                                <div class="project-image-caption">Case</div>
                             </div>
                         </div>
                         
                         <div class="img_container">
                             <img src="project/pi-elec4.png">
                             <div class="overlay">
-                                <div class="text">Output from full electronic system</div>
+                                <div class="project-image-caption">Output from full electronic system</div>
                             </div>
                         </div>
 
