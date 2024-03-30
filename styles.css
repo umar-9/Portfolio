@@ -15,14 +15,15 @@ html {
 
 .navbar {
     font-family: monospace;
-    font-size: 18px;
 }
 
 .navbar-brand {
     color:#fff; 
-    font-size: 22px;
 }
 
+.nav-link {
+    font-size: 120%;
+}
 
 .container {
     border-radius: 5px;
@@ -66,8 +67,7 @@ html {
 #scroll-text {
     position: absolute;
     left: 40px;
-    bottom: 15px;
-    font-size: 20px;
+    bottom: 5px;
     color: white;
     font-family: monospace;
     padding: 10px;
@@ -145,19 +145,11 @@ html {
 }
 
 p {
-    font-size: 18px;
+    font-size: 115%;
 }
-
 
 li {
-    font-size: 18px;
-}
-
-.accordion-button {
-    font-size: 17px;
-}
-.accordion-body {
-    font-size: 16px;
+    font-size: 115%;
 }
 
 
@@ -228,6 +220,7 @@ li {
     padding: 3px 6px;
     border: 3px solid white;
     border-radius: 5px;
+    font-size: 115%;
 }
 
 #linkedin {
@@ -238,7 +231,7 @@ li {
 .project-image-caption {
     padding: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 115%;
     position: absolute;
     text-align: center;
 }
@@ -279,7 +272,8 @@ li {
     vertical-align: middle;
     width: 100%;
 }
-  
+
+/* Adjust the projects table of images for phones */
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -287,39 +281,69 @@ li {
     }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .column {
         flex: 100%;
         max-width: 100%;
     }
-}
-
-
-/* Adjust for phones */
-@media screen and (min-height: 1000px) {
-    #background {
-        height: 25%;
-        position: relative;
+    .border-line {
+        display: none;
     }
-    .container::before  {
-        background-color: transparent;
-    }
-    .border-line .circle {
-        border: 0px;
-    }
-    .border-text {
-        font-size: 0px;
-        color: transparent;
-        text-decoration: none;
-    }
-    p {
-        font-size: 28px;
-    }
-    li {
-        font-size: 25px;
+    .container::before {
+        display: none;
     }
 }
 
+/* Override the containers bootstrap max-widths */
+
+@media (max-width: 1000px) {
+    #linkedin {
+        display: none
+    }
+}
+
+@media (min-width: 0px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 670px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 780px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+
+@media (min-width: 1250px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+}
 
 @keyframes add_padding {
     0% {

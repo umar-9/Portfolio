@@ -35,7 +35,8 @@ function reveal() {
         }
     }
 
-    document.getElementById("scroll-text").remove();
+    //document.getElementById("scroll-text").remove();
+    document.getElementById("scroll").remove();
 }
 
 window.addEventListener("scroll", reveal);
@@ -43,6 +44,7 @@ window.addEventListener("scroll", reveal);
 
 
 function scroller() {
-    document.documentElement.scrollBy(0,400); // For Chrome, Firefox, IE and Opera
-    document.getElementById("scroll-text").remove();
+    document.documentElement.scrollBy(0,400);
+    //document.getElementById("scroll-text").remove();
+    document.getElementById("scroll").remove();
 }
