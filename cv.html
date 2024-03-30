@@ -16,15 +16,10 @@
 
     <body>
         <div class="scroll">
-            <button class="button" onclick="scroller()"> </button>
+            <button class="button" onclick="scroller()">↓</button>
             <div id="scroll-text" class="text">Scroll</div>
         </div>
              
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
-
-
         <div id="background">
             <div id="introduction">
                 <h1 style="font-size:70px">Umar</h1>
@@ -33,7 +28,7 @@
 
             <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" style="color:#fff">Portfolio</a>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -78,12 +73,16 @@
             <br>
         </div>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
+        <section class="container reveal" id="introductory">
+            <div class="border-line">
+                <a href="#introductory">
+                    <div class="circle" style="bottom: 40px"></div>
+                    <div class="border-text" style="top: -50px">Jump</div>
+                </a>
+            </div>
 
-        <section class="container reveal">
             <p>
+                <br>
                 As an ambitious and conscientious year 12 student, starting A-level courses this year (Maths, Further Maths, Physics, Electronics), I am focussed on engineering as my career goal.
                 Over the next 2 years at King Edward VI Grammar School, I hope to further explore and engage in different engineering disciplines, namely the broad branches of mechanical, electronic, and computer (hardware & software) engineering.
                 I learn about engineering through my independent research, projects I undertake, courses I take (e.g., Harvard's CS50 course), and participation in work experience programmes,
@@ -91,10 +90,16 @@
                 The year 10 team project I led received a Gold CREST award and a ‘Highly Commended’ award from the Chelmsford Science and Engineering Society. The year 11 team project for the PA Pi competition to 'accelerate the energy transition' reached the national finals, received a Silver CREST award, and a 'Technical Design (Y10-11)' from CSES.
                 To widen my horizons and try new things, I am currently undertaking the Gold DofE award, and have achieved Bronze. I have participated in Felsted's International Summer School which has enhanced my cultural awareness and taught me about relevant global issues through the Global Studies lessons.
             </p>
+
+            <div class="border-line">
+                <a href="#achievements">
+                    <div class="circle"></div>
+                </a>
+            </div>
         </section>
 
 
-        <section class="container reveal" style="font-size: 17px;">
+        <section class="container reveal" id="achievements" style="font-size: 17px;">
             <h1>Achievements</h1>
             <ul>
                 <li>
@@ -137,15 +142,19 @@
                     BPhO Online Senior Physics Challenge - Gold Award
                 </li>
             </ul>
+            
+            <div class="border-line">
+                <a href="#education">
+                    <div class="circle"></div>
+                </a>
+            </div>
+
         </section>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
-        <section class="container reveal">
+        <section id="education" class="container reveal">
             <h1>Education</h1>
-            <h3>King Edward VI Grammar School, Chelmsford (2018-2025)</h3>
+            <h3>Prefect at King Edward VI Grammar School, Chelmsford (2018-2025)</h3>
             <h5>Courses currently being studied:</h5>
             <ul style="font-size: 17px;">
                 <li>A-Level Maths</li>
@@ -158,6 +167,13 @@
             <h5>Interests</h5>
             <p>Young Engineers Club, in which I participate in projects and mentor lower school members.</p>
             <p>Physics Society - Co-leader</p>
+
+            <div class="border-line">
+                <a href="#top">
+                    <div class="circle" style="bottom: 0px"></div>
+                    <div class="border-text" style="top: 45px; right: 10px">Top</div>
+                </a>
+            </div>
         </section>
 
     </body>

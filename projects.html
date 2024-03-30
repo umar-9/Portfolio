@@ -16,12 +16,8 @@
 
     <body>
         <div class="scroll">
-            <button class="button" onclick="scroller()"> </button>
+            <button class="button" onclick="scroller()">↓</button>
             <div id="scroll-text" class="text">Scroll</div>
-        </div>
-             
-        <div class="scroll-bar">
-            <div class="circle"></div>
         </div>
 
 
@@ -33,7 +29,7 @@
 
             <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" style="color:#fff">Portfolio</a>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -71,12 +67,15 @@
                 </div>
             </nav>
         </div>
-             
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
-        <section class="container reveal">
+        <section id="description" class="container reveal">
+            <div class="border-line">
+                <a href="#description">
+                    <div class="circle" style="bottom: 40px"></div>
+                    <div class="border-text" style="top: -50px">Jump</div>
+                </a>
+            </div>
+
             <h1>Year 10: Royal Society Project</h1>
             <h2>Can low-cost technology assist in adult social care?</h2>
             <p>A team project in year 10</p>
@@ -162,9 +161,16 @@
                     Research into microcontrollers and available pulse oximeter sensors that could be used
                 </li>
             </ul>
+
+            <div class="border-line">
+                <a href="#images">
+                    <div class="circle"></div>
+                </a>
+            </div>
+
         </section>
 
-        <section class="container reveal">
+        <section id="images" class="container reveal">
             <div class="img_container" style="outline: 5px solid white;">
                 <img src="project/rsp_block.png" style="width: 100%">
                 <div class="overlay">
@@ -251,13 +257,15 @@
                     
                 </div>
             </div>
+            
+            <div class="border-line">
+                <a href="#PAPi">
+                    <div class="circle"></div>
+                </a>
+            </div>
         </section>
-             
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
-        <section class="container reveal">
+        <section id="PAPi" class="container reveal">
             <h1>Year 11: PA Raspberry Pi Project</h1>
             <h3>After careful consideration of the theme, “accelerating energy transition” for our project, we decided to develop a smart lighting monitoring system, which can inform users on how to save energy with something as simple as turning lights off.</h3>
             <p>A team project in year 11</p>
@@ -300,13 +308,15 @@
                  so we can detect artificial light. Natural light would then be detected using a sunset-sunrise API. As I did designed and built both the electronics and the circuit system, 
                  it was easier than normal to integrate, and I could easily make any adjustments (e.g., having the code look for a square wave instead of a constant logic high/low output).
             </p>
+            
+            <div class="border-line">
+                <a href="#images2">
+                    <div class="circle"></div>
+                </a>
+            </div>
         </section>
-             
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
-        <section class="container reveal">
+        <section id="images2" class="container reveal">
             <div class="img">
                 <div class="row">
                     <div class="column">
@@ -397,11 +407,12 @@
                     
                 </div>
             </div>
+            
+            <div class="border-line">
+                <div class="circle"></div>
+            </div>
         </section>
              
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
         
         <section class="container reveal" id="quote">
             <div id="quote_txt">
@@ -413,6 +424,14 @@
                     – Michio Kaku
                 </h4>
             </div>
+
+            <div class="border-line">
+                <a href="#top">
+                    <div class="circle" style="bottom: 0px"></div>
+                    <div class="border-text" style="top: 45px; right: 10px">Top</div>
+                </a>
+            </div>
+
         </section>
     </body>
 

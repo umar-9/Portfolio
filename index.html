@@ -15,12 +15,8 @@
 
     <body>
         <div class="scroll">
-            <button class="button" onclick="scroller()"> </button>
+            <button class="button" onclick="scroller()">↓</button>
             <div id="scroll-text" class="text">Scroll</div>
-        </div>
-             
-        <div class="scroll-bar">
-            <div class="circle"></div>
         </div>
 
         <div id="background">
@@ -31,7 +27,7 @@
 
             <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" style="color:#fff">Portfolio</a>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -70,15 +66,18 @@
             </nav>
         </div>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
         <section id="projects" class="container reveal">
+            <div class="border-line">
+                <a href="#projects">
+                    <div class="circle" style="bottom: 40px"></div>
+                    <div class="border-text" style="top: -50px">Jump</div>
+                </a>
+            </div>
+
             <h1>Projects</h1>
             <p>The projects I embark on are team projects as part of my school's Young Engineers Club.</p>
-            <p>Through undertaking projects I hope to find which engineering discipline I enjoy most.</p>
-
+            
             <div class="accordion" id="accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -134,11 +133,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="border-line">
+                <a href="#experiences">
+                    <div class="circle"></div>
+                </a>
+            </div>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
+        </section>
 
         <section id="experiences" class="container reveal">
             <h1>Experiences</h1>
@@ -149,11 +151,15 @@
             </p>
             <h2>Work Experience at Teledyne e2v</h2>
             <p>Involved both the Space Imaging and the RF sectors of the company</p>
+
+            <div class="border-line">
+                <a href="#skills">
+                    <div class="circle"></div>
+                </a>
+            </div>
+
         </section>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
 
         <section id="skills" class="container reveal">
             <h1>Skills</h1>
@@ -228,11 +234,15 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
 
-        <div class="scroll-bar">
-            <div class="circle"></div>
-        </div>
+            <div class="border-line">
+                <a href="#top">
+                    <div class="circle" style="bottom: 0px"></div>
+                    <div class="border-text" style="top: 45px; right: 10px">Top</div>
+                </a>
+            </div>
+
+        </section>
 
         <section id="cred" class="container">
             <p style="color: white;">

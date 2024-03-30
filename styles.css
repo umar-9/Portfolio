@@ -11,6 +11,26 @@ html {
     position: relative;
 }
 
+.navbar {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    color:#fff; 
+    font-size: 22px;
+}
+
+
+
+.container {
+    border-radius: 5px;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+
 .container::before  {
     position: absolute;
     content: '';
@@ -20,26 +40,10 @@ html {
     background-color: white;
 }
 
-.scroll-bar {
-    position: absolute;
-    left: 44px;
-    padding: 10px;
-}
-
-.scroll-bar .circle {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 2px solid white;
-    background-color: black;
-    position: absolute;
-    right: 11px;
-    top: -15px;
-}
 
 .scroll {
     position: absolute;
-    left: 31px;
+    left: 29px;
     bottom: 20px;
 }
 
@@ -59,6 +63,7 @@ html {
     padding: 20px 10px;
     font-size: 20px;
     transition-duration: 1s;
+    color: white;
 }
 
 .scroll .button:hover {
@@ -68,9 +73,48 @@ html {
 .scroll .button:active {
     border: 0px solid #212529;
     color: white;
-    font-size: 0px;
 }
-  
+
+
+.border-line {
+    position: absolute;
+    left: -77px;
+    padding: 10px;
+}
+
+.border-line a {
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    text-align: center;
+}
+
+.border-line .circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    position: absolute;
+    bottom: -40px;
+}
+
+.border-text { 
+    right: 15px;
+    position: relative;
+    top: 45px;
+}
+
+.border-line .circle:hover {
+    background-color: gray;
+}
+
+.border-text:hover {
+
+    color: gray;
+}
+
 
 #introduction {
     text-align: center;
@@ -82,13 +126,6 @@ html {
 }
 
 /*BG color scheme: #121E47 #002463 #034078*/
-
-
-.container {
-    border-radius: 5px;
-    color: white;
-    padding-bottom: 50px;
-}
 
 
 .accordion-button {
@@ -146,13 +183,12 @@ p {
 
 #quote {
     color: white;
-    margin-left: 33px;
     border-radius: 0px;
 }
 
 #quote_txt {
-    border-left: 3px solid #ccc;
     padding: 40px;
+    padding-left: 0px;
 }
 
 .contact {
@@ -229,6 +265,12 @@ p {
     .container::before  {
         background-color: transparent;
     }
+    .border-line .circle {
+        border: 0px;
+    }
+    .border-text {
+        font-size: 0px;
+    }
     .scroll-bar .circle {
         border: 0px;
         background-color: transparent;
@@ -255,7 +297,7 @@ p {
     opacity: 1;
     animation: 1s add_padding forwards;
 }
-  
+
 .text {
     padding: 10px;
     color: white;
@@ -265,6 +307,8 @@ p {
 }
 
 
+
+/* Physical side scrollbar */
 
 ::-webkit-scrollbar {
     width: 5px;
