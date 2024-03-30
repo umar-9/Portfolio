@@ -11,6 +11,14 @@ html {
     position: relative;
 }
 
+.text {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+}
+
 .navbar {
     font-family: monospace;
     font-size: 18px;
@@ -22,7 +30,6 @@ html {
 }
 
 
-
 .container {
     border-radius: 5px;
     color: white;
@@ -30,7 +37,7 @@ html {
     margin-bottom: 10px;
 }
 
-
+/* Border */
 .container::before  {
     position: absolute;
     content: '';
@@ -41,6 +48,7 @@ html {
 }
 
 
+/* Scroll button */
 .scroll {
     position: absolute;
     left: 29px;
@@ -76,6 +84,7 @@ html {
 }
 
 
+/* Line with circles on side */
 .border-line {
     position: absolute;
     left: -77px;
@@ -111,7 +120,6 @@ html {
 }
 
 .border-text:hover {
-
     color: gray;
 }
 
@@ -210,6 +218,9 @@ p {
 }
 
 
+
+/*FADE*/
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -225,6 +236,7 @@ p {
 }
 
 
+/*TABLE*/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -257,6 +269,8 @@ p {
     }
 }
 
+
+/* Adjust for phones */
 @media screen and (min-height: 1000px) {
     #background {
         height: 25%;
@@ -270,12 +284,11 @@ p {
     }
     .border-text {
         font-size: 0px;
-    }
-    .scroll-bar .circle {
-        border: 0px;
-        background-color: transparent;
+        color: transparent;
+        text-decoration: none;
     }
 }
+
 
 @keyframes add_padding {
     0% {
@@ -298,13 +311,6 @@ p {
     animation: 1s add_padding forwards;
 }
 
-.text {
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-}
 
 
 
