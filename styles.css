@@ -72,10 +72,12 @@ html {
     font-family: monospace;
     padding: 10px;
     text-align: center;
+    background-color: transparent;
+    border: 0px;
 }
 
 
-#scroll .button {
+#scroll-button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 16px;
@@ -85,11 +87,11 @@ html {
     color: white;
 }
 
-#scroll .button:hover {
+#scroll-button:hover {
     border: 2px solid #212529;
 }
 
-#scroll .button:active {
+#scroll-button:active {
     border: 0px solid #212529;
     color: white;
 }
