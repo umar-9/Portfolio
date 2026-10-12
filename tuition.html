@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>Umar Sultonov | Tuition</title>
+    </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body>
+        <div id="scroll">
+            <button id="scroll-button" onclick="scroller()">↓</button>
+            <button id="scroll-text" onclick="scroller()"><h4>Scroll</h4></button>
+        </div>
+
+        <div id="background">
+            <div id="introduction">
+                <h1 style="font-size:70px;">Umar Sultonov</h1>
+                <h4 id="text_changer" style="font-weight: normal; font-family: monospace">Aspiring Electronic Engineer</h4>
+            </div>
+
+            <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><h4>Portfolio</h4></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html"><h5>Home</h5></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html"><h5>Projects</h5></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="clear: both;">
+                                    <h5 style="float: left">Mini-Projects</h5>
+                                    <h5 style="float: right">&nbsp;</h5>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/Seismometer" style="color:#034078;">Seismometer</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/umar-9/cpp-game" style="color:#034078;">C++ CLI-based Adventure game</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cv.html"><h5>Resume</h5></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tuition.html"><h5>Tuition</h5></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+                            </li>
+                            <li class="navbar-text">
+                                <a href="https://www.linkedin.com/in/umar-sultonov/"><i class="fa fa-linkedin-square" style="font-size:24px; padding: 0px 10px; color:grey"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <section id="services" class="container reveal">
+            <div class="border-line">
+                <a href="#services">
+                    <div class="circle" style="bottom: 40px"></div>
+                    <div class="border-text" style="top: -50px">Jump</div>
+                </a>
+            </div>
+
+            <h1>Academic Tuition & Coaching</h1>
+            <p>
+                As a second-year BA & MEng Engineering undergraduate at Sidney Sussex College, University of Cambridge, I offer specialized private tuition and mentorship. I draw upon my proven track record of top academic achievements to deliver one-to-one tutoring in GCSE and A-Level Mathematics, Further Mathematics, Physics, and Computer Science, alongside dedicated Oxbridge university admissions coaching and interview preparation.
+            </p>
+
+            <h2 style="margin-top: 40px; margin-bottom: 20px;">Testimonials</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="background-color: #18222c; border-color: #2c3e50;">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0" style="color: #e0e0e0; font-size: 1rem;">
+                                <p>"Umar was a great tutor in helping me actually learn the content, as he made me think about how to solve harder problems before teaching me useful methods, improving my problem-solving skills and confidence. This led to a huge boost in my A-level Further Maths grade. Highly recommend!"</p>
+                                <footer class="blockquote-footer mt-2" style="color: #a0a0a0;">Year 13 <cite title="Source Title">Further Maths student</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="background-color: #18222c; border-color: #2c3e50;">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0" style="color: #e0e0e0; font-size: 1rem;">
+                                <p>"Umar was amazing. My son had lessons for A-level maths preparation over the summer before starting Year 12. Umar provided an intensive crash course, well structured with helpful resources, and regular updates on what had been covered. It was a great experience, and we would highly recommend him to anyone looking to start sixth form with confidence."</p>
+                                <footer class="blockquote-footer mt-2" style="color: #a0a0a0;">Parent of <cite title="Source Title">Year 11 Maths student (Bridging course)</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #18222c; border-color: #2c3e50;">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0" style="color: #e0e0e0; font-size: 1rem;">
+                                <p>"Thank you for all of your help as you helped me a lot. I got a 6 in computer science. I know I was probably capable of 7 but it was a good improvement from the 3 I got in the mocks."</p>
+                                <footer class="blockquote-footer mt-2" style="color: #a0a0a0;">Year 11 <cite title="Source Title">Computer Science student</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #18222c; border-color: #2c3e50;">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0" style="color: #e0e0e0; font-size: 1rem;">
+                                <p>"My son has learned so much from you during the summer holidays! Will definitely recommend you to others in the future."</p>
+                                <footer class="blockquote-footer mt-2" style="color: #a0a0a0;">Parent of <cite title="Source Title">Year 11 Python student</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #18222c; border-color: #2c3e50;">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0" style="color: #e0e0e0; font-size: 1rem;">
+                                <p>Student successfully received an offer to study Engineering at the University of Cambridge following two intensive mock interviews and admissions coaching sessions with me.</p>
+                                <footer class="blockquote-footer mt-2" style="color: #a0a0a0;">Year 13 <cite title="Source Title">University Admissions Client</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-line">
+                <a href="#credentials">
+                    <div class="circle"></div>
+                </a>
+            </div>
+        </section>
+
+        <section id="credentials" class="container reveal">
+            <h1>Academic Track Record</h1>
+            <p>I leverage my own rigorous academic experiences and successes to guide my students to their full potential.</p>
+            
+            <div class="accordion" id="accordionQualifications">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOffers">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOffers" aria-expanded="true" aria-controls="collapseOffers" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">University Offers Achieved</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseOffers" class="accordion-collapse collapse show" aria-labelledby="headingOffers" data-bs-parent="#accordionQualifications">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>University of Cambridge</strong> - Engineering (H100)</li>
+                                <li><strong>Imperial College London</strong> - Electrical & Electronic Engineering (H604)</li>
+                                <li><strong>UCL (University College London)</strong> - Electronic and Electrical Engineering (H601)</li>
+                                <li><strong>University of Manchester</strong> - Electrical and Electronic Engineering (H605)</li>
+                                <li><strong>University of Southampton</strong> - Electronic Engineering with Computer Systems (H6G4)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingALevels">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseALevels" aria-expanded="false" aria-controls="collapseALevels" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">A-Levels & GCSEs</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseALevels" class="accordion-collapse collapse" aria-labelledby="headingALevels" data-bs-parent="#accordionQualifications">
+                        <div class="accordion-body">
+                            <h5>A-Level Qualifications</h5>
+                            <ul>
+                                <li>Maths (A*)</li>
+                                <li>Further Maths (A*)</li>
+                                <li>Physics (A*) - <em>1st in the year</em></li>
+                                <li>Electronics (A*) - <em>1st in the year</em></li>
+                                <li>EPQ (A*) - <em>To what extent can Quantum Computing be considered a technological leap?</em></li>
+                            </ul>
+                            <p><em>Received Foundation Governors’ Award for Best A-Levels.</em></p>
+                            
+                            <hr style="border-color: #444;">
+                            
+                            <h5>GCSE Qualifications</h5>
+                            <p>Twelve Grade 9s, One Grade 8:</p>
+                            <ul>
+                                <li><strong>Grade 9:</strong> Computer Science, Design & Technology, Electronics, Biology, Physics, Chemistry, Maths, English Language, Geography, French, Short Course RE, Statistics.</li>
+                                <li><strong>Grade 8:</strong> English Literature.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAwards">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAwards" aria-expanded="false" aria-controls="collapseAwards" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">Awards, Courses & Activities</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseAwards" class="accordion-collapse collapse" aria-labelledby="headingAwards" data-bs-parent="#accordionQualifications">
+                        <div class="accordion-body">
+                            <h5>Academic Awards</h5>
+                            <ul>
+                                <li>BPhO Physics Olympiad Round 1 Gold Award (Nov 2024)</li>
+                                <li>Senior Mathematical Challenge Gold Award (Nov 2023)</li>
+                                <li>2x Gold CREST Award; 1x Silver CREST Award</li>
+                                <li>Gold DofE</li>
+                            </ul>
+
+                            <hr style="border-color: #444;">
+
+                            <h5>Additional Courses</h5>
+                            <ul>
+                                <li>Harvard CS50: Introduction to Computer Science (2023)</li>
+                                <li>ECS (Electronics and Computer Science) University of Southampton Taster Course (2024)</li>
+                                <li>Felsted International Summer School (2023)</li>
+                            </ul>
+
+                            <hr style="border-color: #444;">
+
+                            <h5>Societies & Extracurriculars</h5>
+                            <ul>
+                                <li><strong>Young Engineers Club (2019-2025):</strong> Lead Mentor for the Junior section; reached PA-Pi national finals and Student Robotics national quarter-finals.</li>
+                                <li><strong>Physics Society:</strong> Co-leader.</li>
+                                <li><strong>Public Speaking:</strong> Sixth Form speaker for a Primary Mathematics Royal Institution Masterclass on Graph Theory (Feb 2024).</li>
+                                <li><strong>Leadership:</strong> School Prefect and Member of the School Council (Y12).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingExperience">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience" style="color:white; background-color:#18222c;">
+                            <h5 style="font-weight: normal; font-family: monospace">Professional Engineering Experience</h5>
+                        </button>
+                    </h2>
+                    <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience" data-bs-parent="#accordionQualifications">
+                        <div class="accordion-body">
+                            <p>
+                                <strong>XJTAG (Summer 2026):</strong> Completed an intensive 8-week internship in the Applications Hardware Team at XJTAG in Cambridge, working on boundary-scan testing systems, authoring 3,600 lines of XJEase code, and modernizing legacy test infrastructure with AI tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-line">
+                <a href="#top">
+                    <div class="circle" style="bottom: 0px"></div>
+                    <div class="border-text" style="top: 45px; right: 10px">Top</div>
+                </a>
+            </div>
+        </section>
+
+    </body>
+
+</html>

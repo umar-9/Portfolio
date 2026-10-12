@@ -5,7 +5,7 @@ var i = 0;
 function texter() {
     i = 0;
     var x = document.getElementById("text_changer");
-    const disciplines = ["Aspiring Engineer", "Aspiring Mechanical Engineer", "Aspiring Electronic Engineer", "Aspiring Software Engineer", "Aspiring Aerospace Engineer"];
+    const disciplines = ["Aspiring Electronic Engineer", "Student Tutor", "Hardware-Software Integrator", "Embedded Electronics Designer"];
     txt = disciplines[(disciplines.indexOf(x.textContent) + 1) % 5];
     x.innerHTML = "";
     typewriter();
